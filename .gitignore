@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/IOWpf/IOWpf/Properties
+/IOWpf/IOWpf/Services
+/IOWpf/IOWpf/Gr2_Sekcja2_IOP.zip

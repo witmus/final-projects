@@ -1,0 +1,33 @@
+﻿<Window x:Class="IOWpf.Views.SelectAmount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:IOWpf.Views"
+             xmlns:mw="clr-namespace:IOWpf.ViewsModels"
+             mc:Ignorable="d" 
+        Title="Wprowadź kwotę" Height="240" Width="250"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow">
+    <Window.DataContext>
+        <mw:SelectAmount/>
+    </Window.DataContext>
+
+    <Grid  Background="#FF373333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="104*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2" Margin="0,0,0.2,-0.2">
+            <TextBox Text="{Binding Path=amount, Mode=TwoWay}" Grid.Row="1" Grid.Column="0" materialDesign:HintAssist.Hint="Kwota" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5" Foreground="#FF2196F3" SelectionBrush="#FF2196F3" FontWeight="Bold"/>
+            <TextBox Text="{Binding Path=id, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" materialDesign:HintAssist.Hint="Skarbonka" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5" Foreground="#FF2196F3" SelectionBrush="#FF2196F3" FontWeight="Bold"/>
+            <Button Command="{Binding Path=Deposit}" Grid.Row="2" Content="Wpłać" Foreground="#FF514A4A"/>
+            <Button Command="{Binding Path=Withdraw}" Grid.Row="3" Content="Wypłać" Foreground="#FF514A4A"/>
+            <Button Command="{Binding Path=Delete}" Grid.Row="4" Content="Usuń skarbonkę" Foreground="#FF514A4A" />
+        </StackPanel>
+
+    </Grid>
+</Window>
