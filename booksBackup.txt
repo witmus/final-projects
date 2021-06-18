@@ -1,0 +1,12 @@
+Moby Dick,Herman Melville,GP,1966,Novel,true
+The Lord of the Rings,J.R.R. Tolkien,GP,1970,Fantasy,true
+The Godfather,Mario Puzo,GP,1965,Novel,true
+Moby Dick,Herman Melville,GP,1966,Novel,true
+The Lord of the Rings,J.R.R. Tolkien,GP,1970,Fantasy,true
+The Godfather,Mario Puzo,GP,1965,Novel,true
+Moby Dick,Herman Melville,GP,1966,Novel,true
+The Lord of the Rings,J.R.R. Tolkien,GP,1970,Fantasy,true
+The Godfather,Mario Puzo,GP,1965,Novel,true
+Moby Dick,Herman Melville,GP,1966,Novel,true
+The Lord of the Rings,J.R.R. Tolkien,GP,1970,Fantasy,true
+The Godfather,Mario Puzo,GP,1965,Novel,true
